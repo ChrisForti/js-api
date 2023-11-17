@@ -16,13 +16,7 @@ fi
 # Npm should be installed
 # gets installed with brew install node
 
-if (npm -version)
-then 
- echo "npm is installed"
-else
- echo "installing npm"
- brew upgrade node
-fi
+
 
 # npm install
 
