@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Node should be installed
+# Node, and npm should be installed
+
+# darwin script
 
 if (which node)
 then 
@@ -12,9 +14,17 @@ fi
 
 # https://github.com/nodesource/distributions#deb
 
+# linux script
 
-# Npm should be installed
-# gets installed with brew install node
+if (which node)
+then 
+ echo "node is installed"
+else
+ echo "installing node"
+ apt install node
+fi
+
+
 
 
 
