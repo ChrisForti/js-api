@@ -13,22 +13,20 @@ else
 fi
 
 # https://github.com/nodesource/distributions#deb
+# Npm should be installed
 
-# linux script
-
-if (which node)
+if (which npm)
 then 
- echo "node is installed"
+ echo "npm is installed"
 else
- echo "installing node"
- apt install node
+ echo "installing npm"
+ brew install npm
 fi
 
 
 
 
 
-# npm install
 
 # curl localhost:3000 
 # node app.js
