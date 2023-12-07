@@ -23,6 +23,15 @@ else
  brew install npm
 fi
 
+# Express should be installed
+
+if (which node)
+then 
+ echo "node is installed"
+else
+  echo "installing node"
+brew install node
+fi
 
 
 
