@@ -25,12 +25,12 @@ fi
 
 # Express should be installed
 
-if (which node)
+if (which express)
 then 
- echo "node is installed"
+ echo "express is installed"
 else
-  echo "installing node"
-brew install node
+  echo "installing express"
+brew install express
 fi
 
 
