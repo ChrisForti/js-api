@@ -30,7 +30,7 @@ then
  echo "express is installed"
 else
   echo "installing express"
-brew install express
+npm install express
 fi
 
 
