@@ -1,0 +1,9 @@
+#cloud-config
+
+users:
+  - default
+  - name: newuser
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB+ZJzHPvSUfezjwq3+gp6ojbww2zLmgVszePhz6b+8I newuser@News-MBP.lan
+    shell: /bin/bash
+    sudo: ALL=(ALL) NOPASSWD:ALL
