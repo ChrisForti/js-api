@@ -1,21 +1,17 @@
 #!/bin/bash
 
-# Node, and npm should be installed
+# This script deploys a node app on ubuntu.
 
-# darwin script
-
-if (which node)
+if ( node -v )
 then 
  echo "node is installed"
 else
  echo "installing node"
- brew install node
+ sudo apt update 
+ sudo apt install -y nodejs
 fi
 
-# https://github.com/nodesource/distributions#deb
-# Npm should be installed
-
-if (which npm)
+if (npm -v)
 then 
  echo "npm is installed"
 else
@@ -23,19 +19,13 @@ else
  brew install npm
 fi
 
-# Express should be installed
-
-if (which node)
+if ( test -d node_modules )
 then 
- echo "node is installed"
+ echo "node_modules are installed"
 else
-  echo "installing node"
-brew install node
+ echo "installing node_modules"
+ npm install
 fi
 
-
-
-
-
-# curl localhost:3000 
-# node app.js
+echo "$(hostname -I)"
+node app.js
