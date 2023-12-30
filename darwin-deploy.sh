@@ -38,6 +38,17 @@ else
 fi
 
 # Express should be installed
+<<<<<<< HEAD
+=======
+
+if (which node)
+then 
+ echo "node is installed"
+else
+  echo "installing node"
+brew install node
+fi
+>>>>>>> cf45cba (Added express to darwin script.)
 
 if (which node)
 >>>>>>> main:darwin-deploy.sh
