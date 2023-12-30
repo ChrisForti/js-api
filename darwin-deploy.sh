@@ -13,6 +13,7 @@ else
  sudo apt install -y nodejs
 fi
 
+
 if ( npm -v )
 then 
  echo "npm is installed"
@@ -20,6 +21,7 @@ else
  echo "installing npm"
  sudo apt update 
  sudo apt install -y npm
+ brew install npm
 fi
 
 if ( test -d node_modules )
@@ -32,3 +34,10 @@ fi
 
 echo "$(hostname -I)"
 node app.js
+
+
+
+
+# curl localhost:3000 
+# node app.js
+>>>>>>> 6ba5b2c (Added node feature to darwin deploy script.)
