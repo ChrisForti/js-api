@@ -25,7 +25,7 @@ then
  echo "nano is installed"
 else
  echo "installing nano"
-brew install nanos
+brew install nano
 fi
 
 # install hypervisor
