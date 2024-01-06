@@ -18,14 +18,14 @@ echo "installing htop"
 brew install htop
 fi
 
-# nano for text editing
+# node for a java script runtime
 
-if (which nano)
+if (which node)
 then 
- echo "nano is installed"
+ echo "node is installed"
 else
- echo "installing nano"
-brew install nano
+ echo "installing node"
+brew install nodejs
 fi
 
 # install hypervisor
