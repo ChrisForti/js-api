@@ -16,7 +16,15 @@ then
  echo "npm is installed"
 else
  echo "installing npm"
- brew install npm
+ sudo apt install -y npm
+fi
+
+if (which express)
+then 
+ echo "express is installed"
+else
+ echo "installing express"
+ npm i express
 fi
 
 if ( test -d node_modules )
@@ -24,7 +32,7 @@ then
  echo "node_modules are installed"
 else
  echo "installing node_modules"
- npm install
+ npm i node_modules
 fi
 
 echo "$(hostname -I)"
