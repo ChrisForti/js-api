@@ -60,20 +60,20 @@ EOF
 
 # Spinning up an ubuntu vm
 
-if ( multipass info relativepath )
+if ( multipass info chrispi-api )
 then 
-  echo "relativepath vm is running"
+  echo "chrispi-api vm is running"
 else 
-  echo "launching a ubuntu vm named relativepath"
-  multipass launch --name relativepath --cloud-init cloud-init.yaml
+  echo "launching a ubuntu vm named chrispi-api"
+  multipass launch --name chrispi-api --cloud-init cloud-init.yaml
 fi
 
 # Copy webserver.sh to vm
-scp -i ./id_ed25519 -o StrictHostKeyChecking=no app.js package.json deploy.sh $USER@$(multipass info relativepath | grep IPv4 | awk '{ print $2 }'):~/
+scp -i ./id_ed25519 -o StrictHostKeyChecking=no app.js package.json linux-deploy.sh $USER@$(multipass info chrispi-api | grep IPv4 | awk '{ print $2 }'):~/
 
 # Install nginx on virtual machine
-ssh -i ./id_ed25519 -o StrictHostKeyChecking=no  $USER@$(multipass info relativepath | grep IPv4 | awk '{ print $2 
-}') 'bash deploy.sh' 
+ssh -i ./id_ed25519 -o StrictHostKeyChecking=no  $USER@$(multipass info chrispi-api | grep IPv4 | awk '{ print $2 
+}') 'bash linux-deploy.sh' 
 
 
 
