@@ -1,0 +1,27 @@
+
+h1 {
+    color: aqua;
+    text-align: left;
+    font-stretch: 200;
+    font-weight: 600;
+
+}
+
+body {
+    background-color: blue;
+    text-align: center;
+    
+}
+
+p {
+    color: aliceblue;
+    text-align: right;
+}
+
+div {
+    border: 4px, 8px;
+    text-align: center;
+    border-radius: 5%;
+    margin: 50px, 100px;
+
+}
