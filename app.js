@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-app.use("./assets", express.static("assets"));
+app.use("./public", express.static("public"));
 
 app.get("/", (req, res) => {
   res.send(
