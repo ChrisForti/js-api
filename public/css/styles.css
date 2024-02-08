@@ -8,7 +8,8 @@ h1 {
 }
 
 body {
-    background-color: blue;
+    background-image: url("/public/css/images/phoenix.jpeg");
+    background-color: #cccccc; ;
     text-align: center;
     
 }
