@@ -15,3 +15,10 @@ If you are in a linux enviroment locally, or can remote into a linux kernel run:
 
 To run dev:
 `node app.js`
+
+### Built With
+
+![html]
+![css]
+![javascript]
+![shell]
