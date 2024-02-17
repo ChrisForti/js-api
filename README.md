@@ -18,7 +18,5 @@ To run dev:
 
 ### Built With
 
-![html]
-![css]
-![javascript]
-![shell]
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="50" height="50" hspace="5px"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="50" height="50" hspace="5px"/>
