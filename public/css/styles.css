@@ -6,23 +6,21 @@ h1 {
 }
 
 body {
-    background-image: url("/public/css/marcos-paulo-prado-GgFYMhbE878-unsplash.jpg");
+    background-image: url("./images/rainbow-river.jpg");
     background-position: center;
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: 2500px;
     
     
     
 }
 
 p {
-    font-style: italic; 
-    color: rgb(89, 0, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color: rgb(16, 189, 50);
     text-align:center;
-    font-size: 10spx;
-    font-weight: 100;
-    font-family: fantasy;
+    
     
     
 
