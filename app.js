@@ -3,6 +3,11 @@ const app = express();
 const port = 3000;
 
 app.use(express.static("public"));
+app.use(express.router("info"));
+
+router.get("/info", (req, res) => {
+  res.sendFile("/public/demo.html");
+});
 
 app.get("/", (req, res) => {
   res.send("<h1>Homepage</h1><a href='/info'>Info page</a>");
